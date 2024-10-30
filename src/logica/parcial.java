@@ -22,10 +22,12 @@ public class parcial {
 		}
 	}
 		
-	public parcial(double primeraRaiz, double segunda) {
-			super();
-			this.primeraRaiz = primeraRaiz;
-			this.segundaRaiz = segundaRaiz; 
+	public Object getPrimeraRaiz() {
+		// TODO Auto-generated method stub
+		return this.primeraRaiz;
+	}
+	public Object getSegundaRaiz() {
+		return this.segundaRaiz;
 	}
 		
 	@Override
@@ -36,7 +38,7 @@ public class parcial {
 	
 	// pruebas
 	public static void main(String[] args) {
-        parcial parcial = new parcial(primeraRaiz, segundaRaiz);
+        parcial parcial = new parcial();
         try {
             parcial.ecuacionSegundoOrden(1, -3, 2);
             System.out.println(parcial.toString());
@@ -44,5 +46,7 @@ public class parcial {
             System.out.println("Error: " + e.getMessage());
         }
     }
+
+	
 }
 
